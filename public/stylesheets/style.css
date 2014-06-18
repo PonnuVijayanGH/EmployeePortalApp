@@ -1,0 +1,149 @@
+header {
+	overflow: auto;
+	background-color: #1ac1ec;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+}
+
+header ul {
+	list-style-type: none;
+	padding-left: 10px;
+	height: auto;
+	background-color: white;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#mainNav ul li {
+	float: left;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+
+#mainNav ul li a{
+	color: white;
+}
+
+header h1 {
+	padding-left: 10px;
+	color: white;
+}
+
+#mainNav {
+	overflow: auto;
+	background-color: #0075a5;
+
+}
+#mainContent {
+	background-color: #eefcfe;
+}
+
+footer {
+	background-color: #1ac1ec;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#srchDiv {
+	overflow: auto;
+	padding-left: 10px;
+}
+#srchDiv p {
+	float: right;
+}
+
+#srchDiv a {
+
+}
+#listDiv ul{
+	padding-left: 0px;
+}
+
+#liItem {
+	border: solid 1px #cccccc;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+#contDiv {
+	padding-top: 10px;
+	float: left;
+}
+
+#contDiv p{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#imgDiv {
+	padding-left: 10px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: auto;
+	margin-bottom: auto;
+	float: left;
+}
+
+#manageCont {
+	float: right;
+	display: inline-block;
+	 padding: 3.7% 1%;
+}
+
+#detCont {
+	overflow: auto;
+}
+
+#detCont img {
+	float : left;
+	padding: 10px 10px 10px 10px;
+}
+
+
+#detCont div {
+	float : left;
+	padding-top: 10px;
+}
+
+.Row
+{
+	width: 100%;
+    display: flex;
+}
+.Cell
+{
+	width: 50%;
+}
+
+.Cell p {
+	margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.Cell input {
+	margin-top: 0px;
+    margin-bottom: 0px;
+    width: 90%;
+}
+
+#projDiv h4{
+	color: blue
+}
+
+#srchDiv #rtAlign {
+	float: left;
+}
+
+.default {
+	border-style:solid;
+	border-color:#e2e3ea;
+}
+
+.red {
+	border-style:solid;
+	border-color:red;
+}

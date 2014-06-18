@@ -1,0 +1,46 @@
+<div>
+	<div id="detCont">
+		<img ng-src="{{'images/main/'+employee.image}}"> 
+		<div>
+			{{employee.name}}
+			<br/>{{employee.date}}
+		</div>
+	</div>
+	<div>
+		<h3>Contact Details</h3>
+		 <div class="Row" ng-repeat = "contact in employee.contactInfo">
+	        <div class="Cell">
+	            <p>{{contact.name}}</p>
+	        </div>
+	        <div class="Cell">
+	            <p>{{contact.value}}</p>
+	        </div>
+		</div>
+	</div>
+	<div>
+		<h3>Educational Details</h3>
+			 <div class="Row" ng-repeat = "details in employee.eduInfo">
+		        <div class="Cell">
+		            <p>{{details.name}}</p>
+		        </div>
+		        <div class="Cell">
+		            <p>{{details.value}}</p>
+		        </div>
+    		</div>
+		</div>
+	</div>
+	<div>
+		<h3>Project Details</h3>
+		<div id="projDiv" ng-repeat = "project in employee.projectInfo">
+			<h4>{{project.name}}</h4>
+			<div class="Row"  ng-repeat = "pDetails in project.details">
+		        <div class="Cell">
+		            <p>{{pDetails.name}}</p>
+		        </div>
+		        <div class="Cell">
+		            <p>{{pDetails.value}}</p>
+		        </div>
+    		</div>
+		</div>
+	</div>
+</div>

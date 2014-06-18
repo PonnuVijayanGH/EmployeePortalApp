@@ -1,0 +1,53 @@
+<div>
+	<div id="detCont">
+		<img ng-src="{{'images/main/'+employee.image}}">
+		<div>
+			<input type="text" ng-model="employee.name" placeholder="Name"
+			ng-class="{normal : isValid, red : !isValid}">
+			<br/><input type="text" ng-model="employee.date" placeholder = "Joining Date">
+			<br/>
+			<input type="text" ng-model="employee.designation" placeholder = "Designation">
+		</div>
+	</div>
+	<div>
+		<h3>Contact Details</h3>
+		 <div class="Row" ng-repeat = "contact in employee.contactInfo">
+	        <div class="Cell">
+	        	<p>{{contact.name}}</p>
+	        </div>
+	        <div class="Cell">
+	        	<input type="text" ng-model="contact.value">
+	        </div>
+		</div>
+	</div>
+	<div>
+		<h3>Educational Details</h3>
+			 <div class="Row" ng-repeat = "details in employee.eduInfo">
+		        <div class="Cell">
+		        	<p>{{details.name}}</p>
+		        </div>
+		        <div class="Cell">
+		        	<input type="text" ng-model="details.value">
+		        </div>
+    		</div>
+		</div>
+	</div>
+	<div>
+		<h3>Project Details</h3>
+		<div id="projDiv" ng-repeat = "project in employee.projectInfo">
+			<input type="text" ng-model="project.name" placeholder="Name">
+			<div class="Row"  ng-repeat = "pDetails in project.details">
+		        <div class="Cell">
+		            <p>{{pDetails.name}}</p>
+		        </div>
+		        <div class="Cell">
+		        	<input type="text" ng-model="pDetails.value">
+		        </div>
+    		</div>
+		</div>
+	</div>
+	<div>
+		<button ng-click="add(employee)">Add</button>
+		<button ng-click="cancel()">Cancel</button>
+	</div>
+</div>

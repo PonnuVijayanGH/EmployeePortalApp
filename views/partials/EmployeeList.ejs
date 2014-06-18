@@ -1,0 +1,31 @@
+<div>
+	<div id="srchDiv">
+		<p id="rtAlign" ng-show="loc=='/manage'" class="ng-hide"><a href = '#/add'>Add</a></p>
+		<p>Search : <input ng-model= "srchTxt"></p>
+		<p>Sort : 
+			<select ng-model="srtVal">
+				<option value="name">Alphabetical</option>
+				<option value="date">New Joiness</option>
+			</select>
+		</p>
+	</div>
+	<div id="listDiv">
+		<ul>
+			<li ng-repeat="employee in employees | filter : srchTxt | orderBy : srtVal : srtVal == 'date'" id="liItem">
+				 <div id="imgDiv">
+					<img ng-src="{{'images/icon/'+employee.image}}">
+				</div>
+				<div id="contDiv">
+					<p><a href="#/home/{{employee._id}}">{{employee.name}}</a></p>
+					<p>{{employee.designation}}</p>
+					<p>{{employee.email}}</p>
+					<p>{{employee.phone}}</p>
+				</div>
+				<div id="manageCont" ng-show="loc=='/manage'" class="ng-hide">
+					<a href="#/manage/{{employee._id}}">Edit</a>
+					<a href="" ng-click="deleteEmp(employee._id)">Delete</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
