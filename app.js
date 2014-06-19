@@ -58,7 +58,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
-app.listen(port);
 console.log('Server running @ post' + port);
 
 module.exports = app;

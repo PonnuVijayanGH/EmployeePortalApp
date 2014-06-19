@@ -1,0 +1,13 @@
+{
+  "name": "Employee Portal",
+  "version": "0.0.0",
+  "authors": [
+    "ponnu <ponnuvijayan08@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "alertify.js": "~0.3.11"
+  }
+}
